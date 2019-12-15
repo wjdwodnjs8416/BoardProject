@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 만들기</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<table class="tbl">
+		<caption>오늘의 표</caption>
+		<colgroup>
+			<col width="25%">
+			<col width="25%">
+			<col width="25%">
+			<col width="25%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>구분</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1교시</th>
+				<td colspan="3" class="point">코딩</td>
+
+			</tr>
+			<tr>
+				<th>2교시</th>
+				<td>자율</td>
+				<td>자율</td>
+				<td>자율</td>
+			</tr>
+			<tr>
+				<th>3교시</th>
+				<td colspan="2" rowspan="2">미술</td>
+				
+				<td>연극</td>
+			</tr>
+			<tr>
+				<th>4교시</th>
+				<td>체육</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
