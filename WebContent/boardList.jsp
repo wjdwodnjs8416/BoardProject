@@ -18,6 +18,7 @@ List<Board> list = control.selectBoardList(board);
 <link rel="stylesheet" href="css/board.css">
 </head>
 <body>
+<a href="./writeForm.jsp">글쓰기</a>
 	<div class="board_list_wrap">
 		<table class="board_list">
 			<caption>게시판 목록</caption>
@@ -33,7 +34,7 @@ List<Board> list = control.selectBoardList(board);
 			<% for(int i=0 ; i<list.size() ; i++){ %>
 				<tr>
 					<td><%= list.get(i).getId() %></td>
-					<td><a href="#"><%= list.get(i).getTitle() %></a></td>
+					<td><a href="./detail.jsp?id=<%=list.get(i).getId()%>"><%= list.get(i).getTitle() %></a></td>
 					<td><%= list.get(i).getWriter() %></td>
 					<td><%= list.get(i).getMdate() %></td>
 					<td><%= list.get(i).getViewCnt() %></td>
